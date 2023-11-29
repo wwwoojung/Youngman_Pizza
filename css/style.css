@@ -1,0 +1,365 @@
+/* * {
+    outline: 1px solid tomato;
+} */
+
+
+header {
+    height: 100px;
+}
+
+.header_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 calc((100% - 1200px)/2 + 15px);
+
+    line-height: 100px;
+    background: #fff;
+}
+
+.header_wrap .gnb>ul {
+    display: flex;
+    gap: 60px;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.main_visual .visual_slide .itm {
+    height: 500px;
+}
+
+.main_visual .visual_slide .itm01 {
+    background: url(../images/main_slide01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .visual_slide .itm02 {
+    background: url(../images/main_slide02.jpg) no-repeat center center / cover;
+}
+
+.main_visual .visual_slide .itm03 {
+    background: url(../images/main_slide03.jpg) no-repeat center center / cover;
+}
+
+.main_visual .visual_slide .itm04 {
+    background: url(../images/main_slide04.jpg) no-repeat center center / cover;
+}
+
+.main_visual .visual_slide .itm05 {
+    background: url(../images/main_slide05.jpg) no-repeat center center / cover;
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_visual .slick-dots li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.main_visual .slick-dots li button {
+    position: relative;
+    width: 50px;
+    height: 4px;
+
+    font-size: 0;
+
+    border: none;
+    background: #ddd;
+
+    cursor: pointer;
+}
+
+.main_visual .slick-dots li button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    background: #1F66A2;
+}
+
+.main_visual .slick-dots li.slick-active button::before {
+    width: 100%;
+    transition: 1s;
+}
+
+
+
+.main_new_menu {
+    background: #f6f6f6;
+}
+
+.main_new_menu .new_menu_content {
+    display: flex;
+    align-items: end;
+    gap: 45px;
+}
+
+.main_new_menu .new_menu_title {
+    margin: 0 0 64px 0;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.main_new_menu .new_menu_title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 36px;
+}
+
+.main_new_menu .new_menu_title p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main_new_menu .new_menu_content .left {
+    flex: 0 0 400px;
+    min-width: 0;
+    order: 1;
+}
+
+.main_new_menu .new_menu_content .right {
+    flex: 1;
+    min-width: 0;
+    order: 2;
+}
+
+.main_new_menu .new_menu_content .itm {
+    text-align: center;
+}
+
+.main_new_menu .new_menu_content .itm figure {
+    margin: 0 0 16px 0;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.new_menu_content .left .itm .text_box {
+    height: 58px;
+}
+
+.new_menu_content .left .itm .text_box strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+
+    margin: 0 0 6px 0;
+}
+
+.new_menu_content .left .itm .text_box p {
+    line-height: 20px;
+}
+
+.new_menu_content .right .itm .text_box strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+
+    margin: 0 0 6px 0;
+}
+
+.new_menu_content .right .itm .text_box p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.main_new_menu .new_menu_content .itm img {
+    width: 100%;
+}
+
+.main_new_menu .new_menu_content .right .slide_box {
+    position: relative;
+}
+
+.main_new_menu .new_menu_content .right .itm {
+    margin: 0 0 0 15px;
+}
+
+.main_new_menu .new_menu_content .left .slick-arrow {
+    position: absolute;
+    bottom: 14px;
+    z-index: 1;
+
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.main_new_menu .new_menu_content .left .slick-prev {
+    left: 0;
+}
+
+.main_new_menu .new_menu_content .left .slick-prev::before {
+    content: "\e5c4";
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    font-size: 20px;
+}
+
+.main_new_menu .new_menu_content .left .slick-next {
+    right: 0;
+}
+
+.main_new_menu .new_menu_content .left .slick-next::before {
+    content: "\e5c8";
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    font-size: 20px;
+}
+
+.main_event .event_title {
+    margin: 0 0 32px 0;
+    text-align: left;
+}
+
+.main_event .event_title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 36px;
+}
+
+.main_event .event_title p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main_event .event_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_event .event_content .event {
+    display: flex;
+    gap: 15px;
+}
+
+.main_event .event_content .event figure {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.main_event .event_content .event figure:hover {
+    transform: translate(0, -20px);
+}
+
+.main_menu {
+    background: #f6f6f6;
+}
+
+.main_menu .tab_menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 48px 0;
+}
+
+.main_menu .tab_menu>li>a {
+    padding: 8px 24px;
+    border: 1px solid #202120;
+    font-size: 14px;
+
+}
+
+.main_menu .tab_menu>li.on>a {
+    background: #202120;
+    color: #fff;
+}
+
+.main_menu .menu_box {
+    display: none;
+}
+
+.main_menu .menu_box.on {
+    display: block;
+}
+
+.main_menu .menu_box .menu {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.main_menu .menu>li {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    padding: 16px 24px;
+}
+
+.main_menu .menu>li figure {
+    margin: 0 0 16px 0;
+}
+
+.main_menu .menu>li img {
+    width: 100%;
+}
+
+.main_menu .menu .text_box {
+    text-align: center;
+}
+
+.main_menu .menu .text_box strong {
+    display: block;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+}
+
+.main_menu .menu .text_box p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.main_promotion .video_case {
+    width: 800px;
+    height: calc(800px * 9 / 16);
+    margin: 0 auto;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.footer {
+    background: #202120;
+    padding: 40px 0;
+}
