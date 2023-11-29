@@ -1,6 +1,17 @@
 $(function () {
+    $(window).on('scroll', function () {
+        const sct = $(window).scrollTop();
+        if (sct > 0) {
+            $('.header_wrap').addClass('on')
+        } else {
+            $('.header_wrap').removeClass('on')
+        }
+    })
 
-
+    $('.header_wrap .gnb .more_btn').on('click', function (e) {
+        e.preventDefault();
+        $('.header_wrap .gnb .sub_menu').toggleClass('on')
+    })
 
     $('.main_visual .visual_slide').slick({
         autoplay: true,
