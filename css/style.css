@@ -14,13 +14,15 @@ header {
     right: 0;
     z-index: 999;
 
+    background: #fff;
+    white-space: nowrap;
+}
+
+.header_wrap .inner {
     display: flex;
     justify-content: space-between;
 
-    padding: 0 calc((100% - 1200px)/2 + 15px);
-
     line-height: 100px;
-    background: #fff;
 }
 
 .header_wrap.on {
@@ -299,6 +301,72 @@ header {
     font-size: 20px;
 }
 
+.main_new_menu .new_menu_content .right .slick-arrow {
+    position: absolute;
+    bottom: -50px;
+    z-index: 1;
+
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+
+    visibility: hidden;
+}
+
+.main_new_menu .new_menu_content .right .slick-prev {
+    left: 50%;
+    transform: translate(-150%, 0);
+}
+
+.main_new_menu .new_menu_content .right .slick-prev::before {
+    content: "\e5c4";
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    font-size: 20px;
+}
+
+.main_new_menu .new_menu_content .right .slick-next {
+    right: 50%;
+    transform: translate(150%, 0);
+}
+
+.main_new_menu .new_menu_content .right .slick-next::before {
+    content: "\e5c8";
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+    .main_new_menu .new_menu_content .left {
+        display: none;
+    }
+
+    .main_new_menu .new_menu_content .right .new_menu_title {
+        text-align: center;
+        margin: 0 0 32px 0;
+    }
+
+    .main_new_menu .new_menu_content .right .slick-arrow {
+        visibility: visible;
+    }
+}
+
 .main_event .event_title {
     margin: 0 0 32px 0;
     text-align: left;
@@ -349,6 +417,14 @@ header {
     .main_event .event_content .event {
         flex-direction: column;
         align-items: center;
+    }
+
+    .main_event .event_content .event figure {
+        width: 75%;
+    }
+
+    .main_event .event_content .event img {
+        width: 100%;
     }
 
     .main_event .event_content .event figure:hover {
@@ -532,18 +608,34 @@ header {
 }
 
 .footer .footer_top .copyright>ul>li {
+    position: relative;
+
     display: inline-block;
     margin: 0 60px 0 0;
 
-    line-height: 18px;
+    line-height: 20px;
+}
+
+.footer .footer_top .copyright>ul>li~li:not(:nth-child(5))::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(0, -50%);
+
+    width: 1px;
+    height: 10px;
+
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .footer .footer_top .sns_wrap {
     text-align: right;
+    white-space: nowrap;
 }
 
 .footer .footer_top .sns_wrap span {
-    display: inline-block;
+    display: block;
     margin: 0 0 8px 0;
 }
 

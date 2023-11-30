@@ -30,7 +30,7 @@ $(function () {
 
     $('.new_menu_content .right .slide_box').slick({
         slidesToShow: 3,
-        arrows: false,
+        arrows: true,
         asNavFor: '.new_menu_content .left .slide_box',
     });
 
