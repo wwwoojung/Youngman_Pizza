@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/custom.js"></script>
 </head>
@@ -690,15 +688,168 @@
                 </div>
                 <div class="inner">
                     <div class="video_case">
-                        <div id="promotion" class="player"></div>
-                        <!-- https://youtu.be/M0pZKgK9lNg -->
+                        <iframe src="https://www.youtube.com/embed/M0pZKgK9lNg?si=MlIZbu-tu5tIzeNC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="main_map sec">
+                <div class="map_wrap inner">
+                    <div class="map_title">
+                        <h2>매장검색</h2>
+                        <p>가까운 청년피자 매장을 쉽고 빠르게 찾아보세요!</p>
+                    </div>
+                    <div class="map_content">
+                        <div class="map_box">
+                            <div id="daumRoughmapContainer1701322475053"
+                                class="root_daum_roughmap root_daum_roughmap_landing __map"></div>
+
+                            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp": "1701322475053",
+                                    "key": "2h24o",
+                                }).render();
+                            </script>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer_wrap">
-
+            <div class="inner">
+                <div class="footer_top">
+                    <div class="footer_wrap">
+                        <div class="footer_logo">
+                            <figure>
+                                <img src="./images/logo_footer.png" alt="">
+                            </figure>
+                            <figure>
+                                <img src="./images/logo_footer2.png" alt="">
+                            </figure>
+                        </div>
+                        <address class="copyright">
+                            <ul>
+                                <li><a href="">대표 : 정관영</a></li>
+                                <li><a href="">사업자번호 : 518-88-01736</a></li>
+                                <li><a href="">주소 : 경기도 화성시 동탄지성로 416-3(반월동)</a></li>
+                                <li><a href="">B2B/제품관련문의 : 070-4450-2737</a></li>
+                                <li><a href="">마케팅/광고문의 이메일 : bsbfoodmarketing@naver.com</a></li>
+                                <li><a href="">업무시간 : 10:00 ~ 19:00</a></li>
+                            </ul>
+                            <span>COPYRIGHT&copy; BSB FOOD. ALL RIGHTS RESERVED</span>
+                        </address>
+                    </div>
+                    <div class="sns_wrap">
+                        <span>가맹문의</span>
+                        <strong>1588-9109</strong>
+                        <span>오전 10:00 ~ 오후 19:00</span>
+                        <span> 점심시간 13:00 ~ 14:00</span>
+                        <div class="sns">
+                            <a href=""><i class="xi-facebook"></i></a>
+                            <a href=""><i class="xi-instagram"></i></a>
+                            <a href=""><i class="xi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_prize">
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt1.png" alt="">
+                            </figure>
+                            <p>2018<br />헤럴드 고객감동 브랜드대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt2.png" alt="">
+                            </figure>
+                            <p>스포츠서울<br />유망강소기업 대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt3.png" alt="">
+                            </figure>
+                            <p>성공의 정석 꾼</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt4.png" alt="">
+                            </figure>
+                            <p>2020<br />대한민국 최고 브랜드 대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt5.png" alt="">
+                            </figure>
+                            <p>2021<br />고객이 신뢰하는 브랜드 대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt6.png" alt="">
+                            </figure>
+                            <p>2021<br />고객감동 우수브랜드 대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt7.png" alt="">
+                            </figure>
+                            <p>2021<br />대한민국 NO.1 피자부문 대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt8.png" alt="">
+                            </figure>
+                            <p>2022<br />대한민국 소비자 선호도 1위</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt9.png" alt="">
+                            </figure>
+                            <p>2022<br />브랜드 파워 인덱스 수상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt10.png" alt="">
+                            </figure>
+                            <p>2022<br />소비자 만족지수 1위</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt11.png" alt="">
+                            </figure>
+                            <p>2022<br />고객이 신뢰하는 브랜드 대상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt12.png" alt="">
+                            </figure>
+                            <p>2022<br />한국소비자평가 1위</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt13.png" alt="">
+                            </figure>
+                            <p>2023<br />브랜드 파워 인덱스 수상</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt14.png" alt="">
+                            </figure>
+                            <p>2023<br />대한민국 소비자 선호도 1위</p>
+                        </div>
+                        <div class="prize_itm">
+                            <figure>
+                                <img src="./images/footer_bt15.png" alt="">
+                            </figure>
+                            <p>2023<br />소비자 만족지수 1위</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

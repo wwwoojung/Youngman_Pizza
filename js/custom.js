@@ -10,7 +10,8 @@ $(function () {
 
     $('.header_wrap .gnb .more_btn').on('click', function (e) {
         e.preventDefault();
-        $('.header_wrap .gnb .sub_menu').toggleClass('on')
+        $('.header_wrap .gnb .sub_menu').toggleClass('on');
+        $('.material-symbols-outlined').toggleClass('on');
     })
 
     $('.main_visual .visual_slide').slick({
@@ -33,23 +34,15 @@ $(function () {
         asNavFor: '.new_menu_content .left .slide_box',
     });
 
-    $('.main_menu .tab_menu>li').on('click', function (e) {
+    $('.main_menu .tab_menu>li a').on('click', function (e) {
         e.preventDefault();
-        const idx = $(this).index();
+        const idx = $(this).parent().index();
 
         $('.main_menu .tab_menu>li').removeClass('on');
         $('.main_menu .menu_box').removeClass('on');
         $('.main_menu .tab_menu>li').eq(idx).addClass('on');
         $('.main_menu .menu_box').eq(idx).addClass('on');
     })
-
-    $('#promotion').YTPlayer({
-        videoURL: 'https://youtu.be/M0pZKgK9lNg',
-        containment: '.main_promotion .video_case',
-        optimizeDisplay: false,
-        autoPlay: false,
-        playOnlyIfVisible: true,
-    });
 
     AOS.init();
 })
