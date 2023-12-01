@@ -14,6 +14,10 @@ $(function () {
         $('.material-symbols-outlined').toggleClass('on');
     })
 
+    $('.mbt').on('click', function () {
+        $('.header_wrap .gnb').toggleClass('on')
+    })
+
     $('.main_visual .visual_slide').slick({
         autoplay: true,
         autoplaySpeed: 5000,
